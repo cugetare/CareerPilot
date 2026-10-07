@@ -41,4 +41,4 @@ app/                demo app (planned), deployed to Vercel
 
 ## Demo deployment
 
-The demo will live in `app/`. On Vercel, import this repository and set **Root Directory** to `app`; everything under `docs/` stays out of the build.
+The demo lives in `app/` (Next.js + Tailwind, built from the Figma wireframe prototype). On Vercel, set **Root Directory** to `app` and **Framework Preset** to Next.js; everything under `docs/` stays out of the build.
