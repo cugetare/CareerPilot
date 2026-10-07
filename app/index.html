@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CareerPilot · Under construction</title>
+<meta name="description" content="CareerPilot tells you whether you fit the job, and why. The demo is under construction.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0F2A4A;--mist:#E8EEF6;--flare:#F2542D;--muted:#5B6B80;--line:#D5DEEA}
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{margin:0;background:var(--mist);color:var(--navy);font-family:Inter,"Segoe UI",system-ui,-apple-system,Helvetica,Arial,sans-serif;display:flex;flex-direction:column;min-height:100vh}
+  main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px 16px;gap:24px}
+  .wm{font-weight:800;font-size:clamp(40px,9vw,88px);line-height:1;letter-spacing:-0.02em;white-space:nowrap;margin:0}
+  .wm svg{height:.6em;width:.6em;vertical-align:-0.02em;margin:0 .02em;overflow:visible}
+  .dot{fill:var(--flare);transform-origin:50px 50px;animation:pulse 2.4s ease-in-out infinite}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.35)}}
+  @media (prefers-reduced-motion:reduce){.dot{animation:none}}
+  .tag{font-size:clamp(16px,2.4vw,20px);color:var(--muted);max-width:36ch;margin:0;line-height:1.5}
+  .badge{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:600;font-size:14px}
+  .badge i{width:8px;height:8px;border-radius:50%;background:var(--flare);display:inline-block}
+  footer{padding:24px 16px;text-align:center;font-size:13px;color:var(--muted)}
+  footer a{color:var(--navy)}
+</style>
+</head>
+<body>
+<main>
+  <h1 class="wm" aria-label="CareerPilot">CareerPil<svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="31" fill="none" stroke="currentColor" stroke-width="13"/><path d="M50 0V22M50 78V100M0 50H22M78 50H100" stroke="currentColor" stroke-width="13"/><circle class="dot" cx="50" cy="50" r="9"/></svg>t</h1>
+  <p class="tag">Know whether you fit the job, and why.</p>
+  <span class="badge"><i></i>Under construction</span>
+</main>
+<footer>Ironhack AI Product Management · Mini Project 1 · <a href="https://github.com/cugetare/CareerPilot">GitHub</a></footer>
+</body>
+</html>
