@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0f2a4a;
+  --color-mist: #e8eef6;
+  --color-flare: #f2542d;
+  --color-flare-ink: #b83a1c;
+  --color-muted: #5b6b80;
+  --color-line: #d5dee8;
+  --color-subtle: #f3f6fa;
+  --font-sans: "Inter Variable", Inter, "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  @apply bg-mist text-navy antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-flare);
+  outline-offset: 2px;
+}
