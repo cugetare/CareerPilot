@@ -1,8 +1,8 @@
-export function Reticle({ className = "", dot = "var(--color-flare)" }: { className?: string; dot?: string }) {
+export function Reticle({ className = "", dot = "var(--color-flare)", ticks = true }: { className?: string; dot?: string; ticks?: boolean }) {
   return (
     <svg viewBox="0 0 100 100" aria-hidden="true" className={className}>
       <circle cx="50" cy="50" r="31" fill="none" stroke="currentColor" strokeWidth="13" />
-      <path d="M50 0V22M50 78V100M0 50H22M78 50H100" stroke="currentColor" strokeWidth="13" />
+      {ticks && <path d="M50 0V22M50 78V100M0 50H22M78 50H100" stroke="currentColor" strokeWidth="13" />}
       <circle cx="50" cy="50" r="9" fill={dot} />
     </svg>
   );

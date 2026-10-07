@@ -1,36 +1,30 @@
 "use client";
 import { useState } from "react";
-import { Button, Card, Columns, Field, Note, PageHead } from "@/components/ui";
+import { AuthFrame } from "@/components/Onboarding";
+import { Button, Card, Field, Note } from "@/components/ui";
 
 export default function Review() {
   const [lang, setLang] = useState("English C1 · German B2");
-  const [edu, setEdu] = useState("BSc Economics · confirm graduation year");
-  const done = !edu.includes("confirm");
+  const [edu, setEdu] = useState("BSc Economics · year?");
+  const done = /\d{4}/.test(edu);
   const pct = done ? 86 : 76;
   return (
-    <>
-      <PageHead title="Review your profile" sub="Step 2 of 3 · Confirm the facts before scores are shown." />
-      <Columns
-        main={
-          <>
-            <Field label="Recent experience" value="Data analyst intern · Example Services · 2024–2026" />
-            <Field label="Skills" value="SQL, reporting, Python" />
-            <Field label="Working languages · needs review" value={lang} onChange={setLang} />
-            <Field label="Education · needs review" value={edu} onChange={setEdu} />
-          </>
-        }
-        aside={
-          <>
-            <Card title={`${pct}% complete · ${done ? "ready for matching" : "scores hidden"}`}>
-              <p>{done ? "Your profile passes the 80% completeness gate." : "Confirm your graduation year to reach the 80% completeness gate."}</p>
-            </Card>
-            <Note>Uncertain fields need your review; completeness is separate from job fit.</Note>
-            <Button variant="primary" href="/onboarding/preferences" disabled={!done}>Confirm reviewed profile</Button>
-            <Button href="/dashboard">Save and finish later</Button>
-            {!done && <Note>Tip: replace “confirm graduation year” with a year, e.g. 2025.</Note>}
-          </>
-        }
-      />
-    </>
+    <AuthFrame step={2} aside={<><p className="text-3xl font-bold leading-tight">{pct}% complete</p><div className="h-2 rounded-full bg-white/15"><div className="h-2 rounded-full bg-flare transition-all" style={{ width: `${pct}%` }} /></div><p className="text-white/70">Scores unlock at 80%. Completeness is separate from job fit.</p></>}>
+      <Card className="p-8">
+        <h1 className="text-2xl font-bold">Review your profile</h1>
+        <p className="mt-1 text-muted">Confirm the facts before scores are shown.</p>
+        <div className="mt-6 space-y-4">
+          <Field label="Recent experience" value="Data analyst intern · Example Services · 2024–2026" />
+          <Field label="Skills" value="SQL, reporting, Python" />
+          <Field label="Working languages" hint="Check level" value={lang} onChange={setLang} />
+          <Field label="Education" hint={done ? undefined : "Add graduation year"} value={edu} onChange={setEdu} />
+        </div>
+        <div className="mt-6 flex flex-wrap items-center gap-3">
+          <Button variant="primary" href="/onboarding/preferences" disabled={!done}>Confirm profile</Button>
+          <Button variant="ghost" href="/dashboard">Finish later</Button>
+        </div>
+        {!done && <div className="mt-3"><Note>Add your graduation year (for example 2025) to pass the 80% gate.</Note></div>}
+      </Card>
+    </AuthFrame>
   );
 }
