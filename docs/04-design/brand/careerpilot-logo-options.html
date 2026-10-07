@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CareerPilot Logo Options</title>
+<style>
+  :root{
+    --navy:#0F2A4A;      /* primary 60% */
+    --mist:#E8EEF6;      /* secondary 30% */
+    --flare:#F2542D;     /* accent 10% */
+    --ink:#0F2A4A; --muted:#5B6B80; --line:#D5DEEA; --bg:#FFFFFF;
+    --font:"Inter","Segoe UI",system-ui,-apple-system,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);padding:40px 16px}
+  main{max-width:1040px;margin:0 auto}
+  h1{font-size:32px;margin:0 0 8px}
+  .lead{color:var(--muted);margin:0 0 32px;font-size:16px}
+  .opt{border:1px solid var(--line);border-radius:12px;padding:24px;margin-bottom:24px}
+  .opt h2{font-size:24px;margin:0 0 4px}
+  .opt .type{color:var(--muted);font-size:14px;margin:0 0 24px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .tile{border-radius:8px;padding:24px 16px;display:flex;align-items:center;justify-content:center;min-height:128px}
+  .light{background:#fff;border:1px solid var(--line)}
+  .dark{background:var(--navy)}
+  .mono{background:var(--mist)}
+  .cap{font-size:12px;color:var(--muted);margin-top:8px;text-align:center}
+  .icons{display:flex;gap:24px;align-items:flex-end;margin-top:24px;flex-wrap:wrap}
+  .icons figure{margin:0;text-align:center}
+  .icons figcaption{font-size:12px;color:var(--muted);margin-top:4px}
+  .notes{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px;font-size:14px;line-height:1.5}
+  .notes h3{font-size:14px;margin:0 0 4px}
+  .notes ul{margin:0;padding-left:18px;color:var(--muted)}
+  /* wordmarks */
+  .wm{font-size:44px;line-height:1;white-space:nowrap;letter-spacing:-0.5px}
+  .wm svg{height:.6em;width:.6em;vertical-align:-0.02em;margin:0 .02em}
+  .wmA{font-weight:800}
+  .wmB{font-weight:300;letter-spacing:-1px}
+  .wmB b{font-weight:800}
+  .wmC{font-weight:800;display:flex;align-items:center;gap:10px;font-size:34px}
+  .wmC .tileicon{height:40px;width:40px}
+  .palette{display:flex;gap:16px;margin-top:8px;flex-wrap:wrap}
+  .sw{flex:1;min-width:200px;font-size:14px;color:var(--muted)}
+  .sw .chip{border-radius:8px;padding:24px 16px;font-size:19px;font-weight:800;margin-bottom:8px}
+  @media (max-width:760px){.grid,.notes{grid-template-columns:1fr}.wm{font-size:34px}}
+</style>
+</head>
+<body>
+<main>
+  <h1>CareerPilot: three logo directions</h1>
+  <p class="lead">Each direction uses the crosshair "o" in "Pilot" and is checked against the four tests: it works at 16 px, works in one colour, can be described in one sentence and is not a trend. Proposed palette: one primary, one secondary, one accent.</p>
+
+  <!-- ===== Option A ===== -->
+  <section class="opt">
+    <h2>A · Reticle wordmark</h2>
+    <p class="type">Wordmark (cheapest to get right) · "CareerPilot, where the o is a crosshair."</p>
+    <div class="grid">
+      <div><div class="tile light"><span class="wm wmA" style="color:var(--navy)">CareerPil<svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="31" fill="none" stroke="currentColor" stroke-width="13"/><path d="M50 0V22M50 78V100M0 50H22M78 50H100" stroke="currentColor" stroke-width="13"/><circle cx="50" cy="50" r="9" fill="var(--flare)"/></svg>t</span></div><div class="cap">Light, full colour</div></div>
+      <div><div class="tile dark"><span class="wm wmA" style="color:#fff">CareerPil<svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="31" fill="none" stroke="currentColor" stroke-width="13"/><path d="M50 0V22M50 78V100M0 50H22M78 50H100" stroke="currentColor" stroke-width="13"/><circle cx="50" cy="50" r="9" fill="var(--flare)"/></svg>t</span></div><div class="cap">Dark background</div></div>
+      <div><div class="tile mono"><span class="wm wmA" style="color:#000">CareerPil<svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="31" fill="none" stroke="currentColor" stroke-width="13"/><path d="M50 0V22M50 78V100M0 50H22M78 50H100" stroke="currentColor" stroke-width="13"/><circle cx="50" cy="50" r="9" fill="currentColor"/></svg>t</span></div><div class="cap">One colour</div></div>
+    </div>
+    <div class="icons">
+      <figure><svg width="64" height="64" viewBox="0 0 100 100"><circle cx="50" cy="50" r="31" fill="none" stroke="#0F2A4A" stroke-width="13"/><path d="M50 0V22M50 78V100M0 50H22M78 50H100" stroke="#0F2A4A" stroke-width="13"/><circle cx="50" cy="50" r="9" fill="#F2542D"/></svg><figcaption>64 px</figcaption></figure>
+      <figure><svg width="32" height="32" viewBox="0 0 100 100"><circle cx="50" cy="50" r="31" fill="none" stroke="#0F2A4A" stroke-width="13"/><path d="M50 0V22M50 78V100M0 50H22M78 50H100" stroke="#0F2A4A" stroke-width="13"/><circle cx="50" cy="50" r="9" fill="#F2542D"/></svg><figcaption>32 px</figcaption></figure>
+      <figure><svg width="16" height="16" viewBox="0 0 100 100"><circle cx="50" cy="50" r="31" fill="none" stroke="#0F2A4A" stroke-width="16"/><path d="M50 0V22M50 78V100M0 50H22M78 50H100" stroke="#0F2A4A" stroke-width="16"/><circle cx="50" cy="50" r="11" fill="#F2542D"/></svg><figcaption>16 px favicon</figcaption></figure>
+    </div>
+    <div class="notes">
+      <div><h3>Why it works</h3><ul><li>Pure wordmark: the name gets learned, not a symbol.</li><li>The orange centre dot is the only accent and stands for "your target role".</li><li>The icon is just the "o", so app icon and favicon come free.</li></ul></div>
+      <div><h3>Watch out</h3><ul><li>Outer ticks read as a rifle scope if they get too long; keep them short.</li><li>The ticks widen the letter, so check the kerning around "l" and "t".</li></ul></div>
+    </div>
+  </section>
+
+  <!-- ===== Option B ===== -->
+  <section class="opt">
+    <h2>B · Two-weight wordmark</h2>
+    <p class="type">Wordmark · "career light, pilot bold, the o is an orange notched ring."</p>
+    <div class="grid">
+      <div><div class="tile light"><span class="wm wmB" style="color:var(--navy)">career<b>pil<svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="36" fill="none" stroke="var(--flare)" stroke-width="16" stroke-dasharray="42.55 14" stroke-dashoffset="-7"/><circle cx="50" cy="50" r="10" fill="var(--flare)"/></svg>t</b></span></div><div class="cap">Light, full colour</div></div>
+      <div><div class="tile dark"><span class="wm wmB" style="color:#fff">career<b>pil<svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="36" fill="none" stroke="var(--flare)" stroke-width="16" stroke-dasharray="42.55 14" stroke-dashoffset="-7"/><circle cx="50" cy="50" r="10" fill="var(--flare)"/></svg>t</b></span></div><div class="cap">Dark background</div></div>
+      <div><div class="tile mono"><span class="wm wmB" style="color:#000">career<b>pil<svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="36" fill="none" stroke="currentColor" stroke-width="16" stroke-dasharray="42.55 14" stroke-dashoffset="-7"/><circle cx="50" cy="50" r="10" fill="currentColor"/></svg>t</b></span></div><div class="cap">One colour</div></div>
+    </div>
+    <div class="icons">
+      <figure><svg width="64" height="64" viewBox="0 0 100 100"><circle cx="50" cy="50" r="36" fill="none" stroke="#F2542D" stroke-width="16" stroke-dasharray="42.55 14" stroke-dashoffset="-7"/><circle cx="50" cy="50" r="10" fill="#F2542D"/></svg><figcaption>64 px</figcaption></figure>
+      <figure><svg width="32" height="32" viewBox="0 0 100 100"><circle cx="50" cy="50" r="36" fill="none" stroke="#F2542D" stroke-width="16" stroke-dasharray="42.55 14" stroke-dashoffset="-7"/><circle cx="50" cy="50" r="10" fill="#F2542D"/></svg><figcaption>32 px</figcaption></figure>
+      <figure><svg width="16" height="16" viewBox="0 0 100 100"><circle cx="50" cy="50" r="36" fill="none" stroke="#F2542D" stroke-width="20" stroke-dasharray="42.55 14" stroke-dashoffset="-7"/><circle cx="50" cy="50" r="12" fill="#F2542D"/></svg><figcaption>16 px favicon</figcaption></figure>
+    </div>
+    <div class="notes">
+      <div><h3>Why it works</h3><ul><li>Lowercase and two weights feel approachable for graduates like Lena.</li><li>"pilot" in bold puts the stress on guidance, not on the job hunt.</li><li>The crosshair stays inside the letter outline, so it never looks like a weapon.</li></ul></div>
+      <div><h3>Watch out</h3><ul><li>The orange ring on white is about 3.5:1 contrast: fine for a graphic, never for text.</li><li>The light weight thins out under ~20 px; use the bold-only version there.</li></ul></div>
+    </div>
+  </section>
+
+  <!-- ===== Option C ===== -->
+  <section class="opt">
+    <h2>C · Combination mark</h2>
+    <p class="type">Symbol + name, splittable for app icons · "A navy tile with a crosshair, next to CareerPilot."</p>
+    <div class="grid">
+      <div><div class="tile light"><span class="wm wmC" style="color:var(--navy)"><svg class="tileicon" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="var(--navy)"/><circle cx="50" cy="50" r="26" fill="none" stroke="#fff" stroke-width="10"/><path d="M50 24V38M50 62V76M24 50H38M62 50H76" stroke="#fff" stroke-width="10"/><circle cx="50" cy="50" r="7" fill="var(--flare)"/></svg><span>CareerPilot</span></span></div><div class="cap">Light, full colour</div></div>
+      <div><div class="tile dark"><span class="wm wmC" style="color:#fff"><svg class="tileicon" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#fff"/><circle cx="50" cy="50" r="26" fill="none" stroke="var(--navy)" stroke-width="10"/><path d="M50 24V38M50 62V76M24 50H38M62 50H76" stroke="var(--navy)" stroke-width="10"/><circle cx="50" cy="50" r="7" fill="var(--flare)"/></svg><span>CareerPilot</span></span></div><div class="cap">Dark background (inverted tile)</div></div>
+      <div><div class="tile mono"><span class="wm wmC" style="color:#000"><svg class="tileicon" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#000"/><circle cx="50" cy="50" r="26" fill="none" stroke="#E8EEF6" stroke-width="10"/><path d="M50 24V38M50 62V76M24 50H38M62 50H76" stroke="#E8EEF6" stroke-width="10"/><circle cx="50" cy="50" r="7" fill="#E8EEF6"/></svg><span>CareerPilot</span></span></div><div class="cap">One colour</div></div>
+    </div>
+    <div class="icons">
+      <figure><svg width="64" height="64" viewBox="0 0 100 100"><rect width="100" height="100" rx="22" fill="#0F2A4A"/><circle cx="50" cy="50" r="26" fill="none" stroke="#fff" stroke-width="10"/><path d="M50 24V38M50 62V76M24 50H38M62 50H76" stroke="#fff" stroke-width="10"/><circle cx="50" cy="50" r="7" fill="#F2542D"/></svg><figcaption>64 px app icon</figcaption></figure>
+      <figure><svg width="32" height="32" viewBox="0 0 100 100"><rect width="100" height="100" rx="22" fill="#0F2A4A"/><circle cx="50" cy="50" r="26" fill="none" stroke="#fff" stroke-width="12"/><path d="M50 24V38M50 62V76M24 50H38M62 50H76" stroke="#fff" stroke-width="12"/><circle cx="50" cy="50" r="8" fill="#F2542D"/></svg><figcaption>32 px</figcaption></figure>
+      <figure><svg width="16" height="16" viewBox="0 0 100 100"><rect width="100" height="100" rx="22" fill="#0F2A4A"/><circle cx="50" cy="50" r="28" fill="none" stroke="#fff" stroke-width="14"/><circle cx="50" cy="50" r="10" fill="#F2542D"/></svg><figcaption>16 px (ticks dropped)</figcaption></figure>
+    </div>
+    <div class="notes">
+      <div><h3>Why it works</h3><ul><li>The tile is a ready-made app and social icon; the name stays plain and readable.</li><li>The ticks point inward, so it reads as "focus", not "scope".</li><li>Easiest to apply in Figma: the icon and the wordmark are separate components.</li></ul></div>
+      <div><h3>Watch out</h3><ul><li>The name itself has no crosshair, so the "o" idea lives only in the icon.</li><li>At 16 px the ticks must be dropped (shown), which adds a variant to maintain.</li></ul></div>
+    </div>
+  </section>
+
+  <section class="opt">
+    <h2>Proposed palette (60 / 30 / 10)</h2>
+    <div class="palette">
+      <div class="sw"><div class="chip" style="background:#0F2A4A;color:#fff">Pilot Navy · #0F2A4A</div>Primary, 60%: text, surfaces, brand. 14.5:1 on white.</div>
+      <div class="sw"><div class="chip" style="background:#E8EEF6;color:#0F2A4A">Sky Mist · #E8EEF6</div>Secondary, 30%: cards, hover, calm areas.</div>
+      <div class="sw"><div class="chip" style="background:#F2542D;color:#fff">Target Flare · #F2542D</div>Accent, 10%: the crosshair dot and the main button only. 3.5:1 on white, so large or bold text only.</div>
+    </div>
+    <p class="cap" style="text-align:left;margin-top:16px">Type: one family (Inter or a system stack), weights 300 / 800 only. Before final use, run a trademark search on any crosshair-in-letter mark in the job and HR software classes, as it is a common motif.</p>
+  </section>
+</main>
+</body>
+</html>
