@@ -1,22 +1,19 @@
 # 05 · Presentation
 
-Slot: 10 minutes, 7 presenting and 3 for questions. Deck: `CareerPilot Product Story.pptx` (restyled to logo A).
+Slot: 5–7 minutes per team. Final deck: `CareerPilot Final Presentation.pptx` (7 slides, speaker notes with the script and timing).
 
-## Talk outline (draft)
-
-| # | Beat | Time |
+| # | Slide | Time |
 | --- | --- | --- |
-| 1 | Problem through Lena: fragmented search, unclear fit, lost track | 0:40 |
-| 2 | Personas: Markus, Lena, Andrei | 0:25 |
-| 3 | Positioning against Jobscan, Huntr, JobCopilot | 0:40 |
-| 4 | Solution and journey: free fit and why, credits only for generation | 0:40 |
-| 5 | Figma demo: sign-in → job list → job focus → Prepare → CV → Apply → history → interview prep | 1:45 |
-| 6 | Business model: 10 free credits, pay as you apply coming soon, employer login later | 0:40 |
-| 7 | MVP scope, timeline to 14 June 2027, success metrics | 0:45 |
-| 8 | Close: what we validate next | 0:15 |
+| 1 | Introduction and problem | 0:45 |
+| 2 | Target users and needs | 0:45 |
+| 3 | PRD overview | 1:00 |
+| 4 | Backlog and sprint planning | 1:00 |
+| 5 | Figma and user journey | 1:00 |
+| 6 | Live demo: app, Figma, GitHub | 1:45 |
+| 7 | Integration and conclusion | 0:45 |
 
-## To align before presenting
+Live demo: [careerpilot.glogoveanu.eu](https://careerpilot.glogoveanu.eu) · Figma prototype: see `docs/04-design/README.md`.
 
-- Remove the verified-recruiter pilot and the "Sofia" persona (recruiter features come with employer login, post-MVP).
-- No completeness gate (PRD FR18): scores always show with a confidence label, and every list shows at least 10 jobs; minimum fit defaults to 90%.
-- Use the PRD timeline: build Jan – Apr 2027, beta May, launch 14 June 2027.
+## Earlier versions
+
+`CareerPilot Product Story.pptx` (v1) and v2–v5 show how the story evolved: v2 added the competition and dropped the completeness gate, v3 followed the PRD → backlog → wireframes → demo order, v4 cut to 7 airy slides around the 5W questions and added the user lifecycle metrics, v5 restored the original tagline and the June 2027 date.

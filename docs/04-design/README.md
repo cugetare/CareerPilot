@@ -1,6 +1,8 @@
 # 04 · Design
 
-Wireframe plan: [Confluence](https://glogoveanu.atlassian.net/wiki/spaces/PRD/pages/5177354) · Prototype: [Figma](https://www.figma.com/design/4SXo5dQmlYyQCiOW4ZJwCt/CareerPilot-test)
+Wireframe plan: [Confluence](https://glogoveanu.atlassian.net/wiki/spaces/PRD/pages/5177354) · Figma: [wireframe file](https://www.figma.com/design/jiH6XiAkRDHMY5UeNhoZyp/CareerPilot) · [clickable prototype](https://www.figma.com/proto/jiH6XiAkRDHMY5UeNhoZyp/CareerPilot?node-id=16-252&page-id=5%3A3&starting-point-node-id=16-252)
+
+The Figma file holds 44 primary views and 58 loading, empty, error and success states in grayscale, with editable components and Auto Layout. The Flows page maps each persona's tasks (Markus, Lena, Andrei, Sofia, admin) to screen IDs (C01 sign-in … C13 "Did you apply?"), and every frame carries an annotation with the user stories it covers. One mobile frame shows the job detail.
 
 ![Screen flow](screen-flow.svg)
 

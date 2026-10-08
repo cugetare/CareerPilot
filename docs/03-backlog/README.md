@@ -2,7 +2,9 @@
 
 Snapshot of [Jira CPA](https://glogoveanu.atlassian.net/jira/software/projects/CPA/boards/39). Jira holds the acceptance criteria and wins on conflicts.
 
-Epics: CPA-2 Profile & Onboarding · CPA-3 Job Discovery · CPA-4 Explainable Matching · CPA-5 Application Documents · CPA-6 Application History · CPA-8 Trust & Privacy · CPA-78 Career Guidance & Interview
+9 epics, 29 stories. Candidate epics: CPA-2 Profile & Onboarding · CPA-3 Job Discovery · CPA-4 Explainable Matching · CPA-5 Application Documents · CPA-6 Application History · CPA-8 Trust & Privacy · CPA-78 Career Guidance & Interview. Headhunter pilot epics: CPA-88 Headhunter Matching & Outreach · CPA-89 Candidate Discovery Consent & Availability.
+
+Prioritisation: MoSCoW sets the MVP scope (22 candidate stories: 13 Must, 6 Should, 2 Could, 1 post-MVP), RICE ranks within it, WSJF orders the 7 pilot stories (US23–US29).
 
 ## Build sprints (S7–S12 of the PRD timeline)
 
