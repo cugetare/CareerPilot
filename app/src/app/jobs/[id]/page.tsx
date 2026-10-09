@@ -1,5 +1,6 @@
 "use client";
 import { use, useState } from "react";
+import { fitBand, track } from "@/lib/analytics";
 import { notFound, useRouter } from "next/navigation";
 import Link from "next/link";
 import { Button, Card, Chip, Eyebrow, FitRing, Note, PageHead, TwoCol } from "@/components/ui";
@@ -68,7 +69,7 @@ export default function JobDetail({ params }: { params: Promise<{ id: string }> 
               ) : (
                 <Button full disabled cost={1}>Prepare application</Button>
               )}
-              <Button full href={SOURCE_URL} external onClick={apply} cost={0}>Apply on job site</Button>
+              <Button full href={SOURCE_URL} external onClick={() => { track("apply_clicked", { from: "job", band: fitBand(job.id) }); apply(); }} cost={0}>Apply on job site</Button>
               <Button full variant="ghost" onClick={() => setSaved((v) => !v)}>{saved ? "★ Saved" : "☆ Save job"}</Button>
             </div>
             {canPrepare ? (

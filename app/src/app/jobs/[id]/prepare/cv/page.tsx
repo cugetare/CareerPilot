@@ -3,6 +3,7 @@ import { Suspense, use, useState } from "react";
 import { notFound, useSearchParams } from "next/navigation";
 import { Button, Card, Chip, Note, PageHead, TwoCol } from "@/components/ui";
 import { getJob } from "@/lib/jobs";
+import { track } from "@/lib/analytics";
 
 const ORIGINAL = "Produced weekly reports for the operations team.";
 const PROPOSED = "Produced weekly operations reports using SQL and reporting tools.";
@@ -42,9 +43,9 @@ function Review({ id }: { id: string }) {
             </div>
             <p className="text-sm text-muted">Evidence: Operations analyst internship · confirmed experience. No invented achievements.</p>
             <div className="flex flex-wrap gap-3 border-t border-line pt-5">
-              <Button variant="primary" onClick={() => setState("accepted")}>{state === "editing" ? "Save wording" : "Accept"}</Button>
+              <Button variant="primary" onClick={() => { track("cv_change_reviewed", { action: state === "editing" ? "edited" : "accepted", doc }); setState("accepted"); }}>{state === "editing" ? "Save wording" : "Accept"}</Button>
               <Button onClick={() => setState("editing")}>Edit</Button>
-              <Button onClick={() => setState("rejected")}>Reject</Button>
+              <Button onClick={() => { track("cv_change_reviewed", { action: "rejected", doc }); setState("rejected"); }}>Reject</Button>
               <Button variant="ghost" onClick={() => { setText(PROPOSED); setState("pending"); }} cost={0}>Regenerate</Button>
             </div>
           </Card>
@@ -52,8 +53,8 @@ function Review({ id }: { id: string }) {
         aside={
           <Card className="space-y-4">
             <p className="font-semibold">Export</p>
-            <Button full variant="primary" disabled={!reviewed} onClick={() => setExported(true)}>Export PDF</Button>
-            <Button full disabled={!reviewed} onClick={() => setExported(true)}>Export DOCX</Button>
+            <Button full variant="primary" disabled={!reviewed} onClick={() => { track("document_exported", { format: "pdf", doc }); setExported(true); }}>Export PDF</Button>
+            <Button full disabled={!reviewed} onClick={() => { track("document_exported", { format: "docx", doc }); setExported(true); }}>Export DOCX</Button>
             {exported ? (
               <div className="rounded-2xl bg-good-tint p-4 text-sm"><p className="font-semibold text-good">Document ready</p><p className="mt-1">Demo export: no file is created.</p></div>
             ) : (

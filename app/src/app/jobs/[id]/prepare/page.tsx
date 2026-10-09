@@ -1,5 +1,6 @@
 "use client";
 import { use, useState } from "react";
+import { fitBand, track } from "@/lib/analytics";
 import { notFound, useRouter } from "next/navigation";
 import { Button, Card, Chip, Field, Note, PageHead, TwoCol } from "@/components/ui";
 import { useStore } from "@/components/store";
@@ -82,7 +83,7 @@ export default function Prepare({ params }: { params: Promise<{ id: string }> })
             <Button full disabled={blocked("letter")} onClick={() => gen("letter")} cost={done("letter") ? 0 : 1}>{done("letter") ? "Open cover letter" : "Generate cover letter"}</Button>
             <Note>{confirmed ? "You review every change before export. Regeneration is included." : "Generation unlocks after you confirm the strategy."}</Note>
             <div className="border-t border-line pt-4">
-              <Button full href={SOURCE_URL} external cost={0} onClick={() => setTimeout(() => router.push(`/jobs/${job.id}/applied`), 300)}>Apply on job site</Button>
+              <Button full href={SOURCE_URL} external cost={0} onClick={() => { track("apply_clicked", { from: "prepare", band: fitBand(job.id) }); setTimeout(() => router.push(`/jobs/${job.id}/applied`), 300); }}>Apply on job site</Button>
             </div>
           </Card>
         }

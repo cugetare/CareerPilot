@@ -30,6 +30,7 @@ docs/
   03-backlog/       epics, user stories, sprint plan (snapshot of Jira)
   04-design/        screen flow, wireframe plan, brand (logo A)
   05-presentation/  final deck, earlier versions and talk notes
+  06-analytics/     Vercel monitoring and analytics: events, metrics, plan limits
 app/                Next.js demo app, deployed to Vercel
 ```
 
@@ -41,6 +42,7 @@ app/                Next.js demo app, deployed to Vercel
 - [x] Wireframe plan and logo A
 - [x] Figma wireframe prototype: 44 primary views, 58 states, persona task flows, one mobile frame
 - [x] Demo app on Vercel: [careerpilot.glogoveanu.eu](https://careerpilot.glogoveanu.eu)
+- [x] Monitoring: Vercel Web Analytics, Speed Insights and custom events in the demo ([docs/06-analytics](docs/06-analytics/README.md))
 - [x] Presentation: `docs/05-presentation/CareerPilot Final Presentation.pptx` (5–7 minutes)
 - [ ] Planned, not built: real CV parsing, job ingestion from the Bundesagentur lists, AI generation, beta and launch (June 2027)
 
