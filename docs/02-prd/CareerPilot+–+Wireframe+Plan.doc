@@ -1,0 +1,1195 @@
+Date: Fri, 9 Oct 2026 08:58:31 +0000 (UTC)
+Message-ID: <523514957.17.1791536311158@e502e63b3c03>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_16_1293947763.1791536311158"
+
+------=_Part_16_1293947763.1791536311158
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>CareerPilot =E2=80=93 Wireframe Plan</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>CareerPilot =E2=80=93 Wireframe Plan</h1>
+    <div class=3D"Section1">
+        <p><time datetime=3D"2026-10-06" class=3D"date-past">06 Oct 2026</t=
+ime> =C2=B7 Owner: Dan Glogoveanu =C2=B7 Status: <span class=3D"status-macr=
+o aui-lozenge aui-lozenge-visual-refresh aui-lozenge-complete">IN REVIEW</s=
+pan></p>
+<p>The wireframe covers seven screens in one flow: SSO sign-in, onboarding,=
+ job alerts and filters, job list, job focus with Apply, Prepare and Save, =
+the application preparation page, and the application history with intervie=
+w prep; desktop frames plus one mobile frame. It reflects the team's latest=
+ decisions below; visual design follows in Figma with logo variant A.</p>
+<h2 id=3D"CareerPilot=E2=80=93WireframePlan-Decisionsupdate">Decisions upda=
+te</h2>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Topic</p></th>
+<th class=3D"confluenceTh">
+<p>Before</p></th>
+<th class=3D"confluenceTh">
+<p>Now</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Launch market</p></td>
+<td class=3D"confluenceTd">
+<p>Germany and Spain</p></td>
+<td class=3D"confluenceTd">
+<p>One market for the MVP, to test the solution in a controlled setting. Ge=
+rmany</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Job sources</p></td>
+<td class=3D"confluenceTd">
+<p>Official APIs and partnerships</p></td>
+<td class=3D"confluenceTd">
+<p>Public job lists of the Bundesagentur f=C3=BCr Arbeit for the MVP; Apply=
+ opens the original job posting on the job site. Partner feeds come with em=
+ployer login</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Roadmap after MVP</p></td>
+<td class=3D"confluenceTd">
+<p>Employer ads and talent search, then freemium</p></td>
+<td class=3D"confluenceTd">
+<p>1. Employer login with its own onboarding (job ads, talent search, partn=
+er job feeds, recruiter verification) to protect revenue =E2=86=92 2. Pay a=
+s you apply: prepaid wallet and 10-credit packs for users who used their da=
+ily credits =E2=86=92 3. Second market</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Credits</p></td>
+<td class=3D"confluenceTd">
+<p>5 applications per day</p></td>
+<td class=3D"confluenceTd">
+<p>10 credits per day; detailed matching, CV, cover letter and interview pr=
+ep cost 1 credit each; the match score in the job list is free</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Preparation</p></td>
+<td class=3D"confluenceTd">
+<p>Documents generated from the job focus</p></td>
+<td class=3D"confluenceTd">
+<p>A third button, "Prepare application", opens a preparation page: detaile=
+d match, strategy, then CV, cover letter and interview prep</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Why it fits</p></td>
+<td class=3D"confluenceTd">
+<p>Top strength and top risk on every card</p></td>
+<td class=3D"confluenceTd">
+<p>North star and the free evidence: a few words on why the job fits, posit=
+ives only; gaps and risks are shown in Prepare. Pre-generated for the top 5=
+ jobs; the rest generated when the card is opened or scrolled into view, th=
+en cached</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Credit icon</p></td>
+<td class=3D"confluenceTd">
+<p>Open</p></td>
+<td class=3D"confluenceTd">
+<p>The target (reticle "o" from logo A)</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Logo</p></td>
+<td class=3D"confluenceTd">
+<p>Three directions</p></td>
+<td class=3D"confluenceTd">
+<p>Variant A, the reticle wordmark</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Credit top-up</p></td>
+<td class=3D"confluenceTd">
+<p>Wait for the daily reset</p></td>
+<td class=3D"confluenceTd">
+<p>Coming soon in the MVP: a prepaid wallet (top-up from =E2=82=AC10) buys =
+10-credit packs at =E2=82=AC0.99; bought credits never expire. Goes live wi=
+th pay as you apply after launch; free actions and the daily 10 stay unchan=
+ged</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Interview prep</p></td>
+<td class=3D"confluenceTd">
+<p>Button on the preparation page</p></td>
+<td class=3D"confluenceTd">
+<p>From the application history: confirming an application saves the job de=
+scription there, and opening it later offers Prepare for interview (=E2=88=
+=921)</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Sign-in</p></td>
+<td class=3D"confluenceTd">
+<p>Google, LinkedIn, email</p></td>
+<td class=3D"confluenceTd">
+<p>Standard SSO card reused from a Figma Community component: Google, Micro=
+soft, Apple, GitHub, LinkedIn</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Recruiter warning</p></td>
+<td class=3D"confluenceTd">
+<p>In the MVP backlog</p></td>
+<td class=3D"confluenceTd">
+<p>Moves to employer login, which needs its own onboarding</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Frames</p></td>
+<td class=3D"confluenceTd">
+<p>Desktop, mobile later</p></td>
+<td class=3D"confluenceTd">
+<p>Desktop plus one mobile frame of the job focus</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Knock-on changes:</strong> the PRD and Jira follow these decisio=
+ns. Pay as you apply keeps ranking neutrality: paying buys more application=
+s, never a better position.</p>
+<h2 id=3D"CareerPilot=E2=80=93WireframePlan-Screenflow">Screen flow</h2><sp=
+an class=3D"confluence-embedded-file-wrapper image-center-wrapper confluenc=
+e-embedded-manual-size"><img class=3D"confluence-embedded-image image-cente=
+r" alt=3D"Wireframe screen flow from SSO sign-in to job focus, preparation =
+page, application history and interview prep" width=3D"468" loading=3D"lazy=
+" src=3D"466bf78dfc963295a8b14cec4584e33d2999b40a9198e63e4cd1f5392b81be59" =
+data-image-src=3D"https://glogoveanu.atlassian.net/wiki/download/attachment=
+s/5177354/careerpilot-flow-v2.svg?version=3D1&amp;modificationDate=3D179127=
+7865421&amp;cacheVersion=3D1&amp;api=3Dv2" data-height=3D"610" data-width=
+=3D"760" data-unresolved-comment-count=3D"0" data-linked-resource-id=3D"462=
+0296" data-linked-resource-version=3D"1" data-linked-resource-type=3D"attac=
+hment" data-linked-resource-default-alias=3D"careerpilot-flow-v2.svg" data-=
+base-url=3D"https://glogoveanu.atlassian.net/wiki" data-linked-resource-con=
+tent-type=3D"image/svg+xml" data-linked-resource-container-id=3D"5177354" d=
+ata-linked-resource-container-version=3D"6" data-media-id=3D"6fd34f1e-1af2-=
+4b39-bce5-a2a40dc019c4" data-media-type=3D"file" height=3D"376"></span>
+<p>Returning users skip onboarding and land on the job list. Apply opens th=
+e original posting for free and, once confirmed, saves the job description =
+to the application history, where interview prep waits; Prepare checks the =
+daily credits before opening the preparation page.</p>
+<h2 id=3D"CareerPilot=E2=80=93WireframePlan-Globalframe">Global frame</h2>
+<p>Every screen after sign-in shares one header and one footer, so they are=
+ built once as components.</p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Element</p></th>
+<th class=3D"confluenceTh">
+<p>Content</p></th>
+<th class=3D"confluenceTh">
+<p>Notes</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Header, left</p></td>
+<td class=3D"confluenceTd">
+<p>Logo A (reticle wordmark)</p></td>
+<td class=3D"confluenceTd">
+<p>Links to the job list</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Header, centre</p></td>
+<td class=3D"confluenceTd">
+<p>Navigation: Jobs =C2=B7 Saved =C2=B7 Applications =C2=B7 Profile</p></td=
+>
+<td class=3D"confluenceTd">
+<p>Applications opens the application history (screen 7)</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Header, right</p></td>
+<td class=3D"confluenceTd">
+<p>Credits pill "7 of 10 credits left today" =C2=B7 language switch DE / EN=
+ =C2=B7 avatar menu</p></td>
+<td class=3D"confluenceTd">
+<p>Clicking the pill opens the top-up dialog (coming soon); at 0 it turns o=
+range and shows the reset time and the top-up link</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Footer</p></td>
+<td class=3D"confluenceTd">
+<p>Privacy =C2=B7 Ranking policy ("No payment changes your ranking") =C2=B7=
+ Imprint</p></td>
+<td class=3D"confluenceTd">
+<p>Ranking policy supports NFR1 and US22</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Frame size</p></td>
+<td class=3D"confluenceTd">
+<p>Desktop 1440 =C3=97 1024, 12-column grid</p></td>
+<td class=3D"confluenceTd">
+<p>Plus one mobile frame, 390 =C3=97 844, of the job focus</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id=3D"CareerPilot=E2=80=93WireframePlan-Credits">Credits</h3>
+<p>Every user gets 10 credits per day, reset at 00:00 local time. A complet=
+e application costs 4 credits: Prepare, CV and cover letter before applying=
+, interview prep after. A user can prepare three jobs a day with CV and cov=
+er letter.</p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Action</p></th>
+<th class=3D"confluenceTh">
+<p>Cost</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Match score and short "why it fits" in the job list and job focus</p></t=
+d>
+<td class=3D"confluenceTd">
+<p><span class=3D"status-macro aui-lozenge aui-lozenge-visual-refresh aui-l=
+ozenge-success">FREE</span></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Apply on job site, Save</p></td>
+<td class=3D"confluenceTd">
+<p><span class=3D"status-macro aui-lozenge aui-lozenge-visual-refresh aui-l=
+ozenge-success">FREE</span></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Prepare application (detailed matching and strategy)</p></td>
+<td class=3D"confluenceTd">
+<p><span class=3D"status-macro aui-lozenge aui-lozenge-visual-refresh aui-l=
+ozenge-current">1 CREDIT</span></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Generate CV</p></td>
+<td class=3D"confluenceTd">
+<p><span class=3D"status-macro aui-lozenge aui-lozenge-visual-refresh aui-l=
+ozenge-current">1 CREDIT</span></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Generate cover letter</p></td>
+<td class=3D"confluenceTd">
+<p><span class=3D"status-macro aui-lozenge aui-lozenge-visual-refresh aui-l=
+ozenge-current">1 CREDIT</span></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Interview prep (from the application history)</p></td>
+<td class=3D"confluenceTd">
+<p><span class=3D"status-macro aui-lozenge aui-lozenge-visual-refresh aui-l=
+ozenge-current">1 CREDIT</span></p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Pay as you apply: pack of 10 credits from the prepaid wallet (coming soo=
+n)</p></td>
+<td class=3D"confluenceTd">
+<p>=E2=82=AC0.99</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Credit badge:</strong> every paid button carries a small "=E2=88=
+=921" badge with the target (reticle "o") as the credit icon, 16 px high. T=
+ooltip: "Uses 1 credit =C2=B7 7 left today". At 0 credits the paid buttons =
+are disabled and show "Resets at 00:00 =C2=B7 Buy 10 credits"; free actions=
+ keep working. Every generation costs 1 credit, regenerations included.</p>
+<p><strong>Pay as you apply (coming soon):</strong> clicking the credits pi=
+ll opens a dialog with the prepaid wallet (top-up from =E2=82=AC10) and 10-=
+credit packs at =E2=82=AC0.99, marked "Coming soon" with a disabled button,=
+ so the demo shows the model without a payment flow. The 0-credit states li=
+nk to the same dialog. After launch, bought credits never expire, are used =
+after the daily ones and never change the ranking. The =E2=82=AC10 minimum =
+means one card payment covers about ten packs instead of one fee per pack.<=
+/p>
+<p><strong>Cost target:</strong> at scale a complete application (4 credits=
+) must cost under =E2=82=AC0.01 in AI and infrastructure, so under =E2=82=
+=AC0.0025 per credit. A pack sells at =E2=82=AC0.099 per credit, and a user=
+ spending all 10 free credits a day costs under =E2=82=AC0.025. The target =
+makes the financials work from the MVP; if real costs come in higher, the p=
+ack price goes up.</p>
+<p><strong>Keeping the free "why" cheap:</strong> the score and the why com=
+e from the same model call and are cached per job and profile, so each pair=
+ is paid for once. Only the top 5 jobs of a digest are generated up front; =
+the rest are generated the first time a card is opened or scrolled into vie=
+w. A user who likes job 6 still sees its why for free, and Prepare stays on=
+e click away.</p>
+<h2 id=3D"CareerPilot=E2=80=93WireframePlan-Screenspecs">Screen specs</h2>
+<h3 id=3D"CareerPilot=E2=80=93WireframePlan-1.SSOsign-in">1. SSO sign-in</h=
+3>
+<p><strong>Purpose:</strong> get in within one click and trust the product =
+from the first screen. <strong>Stories:</strong> US8, US20, US22.</p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Region</p></th>
+<th class=3D"confluenceTh">
+<p>Elements</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Left half</p></td>
+<td class=3D"confluenceTd">
+<p>Logo A =C2=B7 headline "Know whether you fit the job, and why" =C2=B7 th=
+ree trust points: Free for job seekers, No paid ranking, Your data stays in=
+ the EU</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Right half, card</p></td>
+<td class=3D"confluenceTd">
+<p>Standard SSO card from a Figma Community component: "Continue with Googl=
+e", "Continue with Microsoft", "Continue with Apple", divider "or", "Contin=
+ue with GitHub", "Continue with LinkedIn" =C2=B7 terms and privacy line =C2=
+=B7 language switch DE / EN</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>
+<p><strong>Primary action:</strong> an SSO button; a new user goes to onboa=
+rding, a returning user goes straight to the job list.</p></li>
+<li>
+<p><strong>States:</strong> sign-in cancelled ("Sign-in was cancelled. Try =
+again."), provider error, loading.</p></li>
+</ul>
+<h3 id=3D"CareerPilot=E2=80=93WireframePlan-2.Onboarding(threesteps)">2. On=
+boarding (three steps)</h3>
+<p><strong>Purpose:</strong> a complete profile from the CV in under 5 minu=
+tes. <strong>Stories:</strong> US8, US9, US15.</p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Step</p></th>
+<th class=3D"confluenceTh">
+<p>Elements</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>1 Upload CV</p></td>
+<td class=3D"confluenceTd">
+<p>Stepper 1 / 2 / 3 =C2=B7 drop zone "Drop your CV (PDF or DOCX)" =C2=B7 p=
+arsing progress "Reading your CV=E2=80=A6"</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>2 Review profile</p></td>
+<td class=3D"confluenceTd">
+<p>Pre-filled sections: experience, education, skills, languages with level=
+s =C2=B7 low-confidence fields highlighted =C2=B7 completeness meter with t=
+he 80% mark</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>3 Done</p></td>
+<td class=3D"confluenceTd">
+<p>"Your profile is 86% complete" =C2=B7 CTA "Set up job alerts"</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>
+<p><strong>Gate:</strong> below 80%, the CTA reads "Add 2 missing fields to=
+ unlock matching" and links each missing field.</p></li>
+<li>
+<p><strong>States:</strong> CV cannot be read (manual form showing which se=
+ctions failed), second CV in another language (merge prompt, US15, Should).=
+</p></li>
+</ul>
+<h3 id=3D"CareerPilot=E2=80=93WireframePlan-3.Jobalertsandfilters">3. Job a=
+lerts and filters</h3>
+<p><strong>Purpose:</strong> set preferences once; every suggestion fits. <=
+strong>Stories:</strong> US14, US1.</p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Region</p></th>
+<th class=3D"confluenceTh">
+<p>Elements</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Form</p></td>
+<td class=3D"confluenceTd">
+<p>Roles or domains (chips) =C2=B7 seniority =C2=B7 location with distance =
+slider (km) =C2=B7 remote toggle =C2=B7 working languages =C2=B7 minimum ma=
+tch slider (default 75%)</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Alert settings</p></td>
+<td class=3D"confluenceTd">
+<p>Frequency daily or weekly =C2=B7 day and time =C2=B7 channel email or in=
+-app</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Side panel</p></td>
+<td class=3D"confluenceTd">
+<p>Live preview "About 24 jobs match this week"</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>
+<p><strong>Primary action:</strong> "Save and show my jobs".</p></li>
+<li>
+<p><strong>States:</strong> zero matches ("No jobs match. Try a larger dist=
+ance.").</p></li>
+</ul>
+<h3 id=3D"CareerPilot=E2=80=93WireframePlan-4.Joblist">4. Job list</h3>
+<p><strong>Purpose:</strong> review the digest in one sitting and decide wh=
+at to open. <strong>Stories:</strong> US1, US2, US6, US16.</p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Region</p></th>
+<th class=3D"confluenceTh">
+<p>Elements</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Top bar</p></td>
+<td class=3D"confluenceTd">
+<p>"12 new matches =C2=B7 updated Mon 08:00" =C2=B7 sort: best match, newes=
+t =C2=B7 "Edit alerts"</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Left rail</p></td>
+<td class=3D"confluenceTd">
+<p>Quick filters: remote, distance, language, minimum match</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Job card</p></td>
+<td class=3D"confluenceTd">
+<p>Title =C2=B7 company =C2=B7 location or remote =C2=B7 posted date =C2=B7=
+ source chip =C2=B7 language chip (e.g. German C1) =C2=B7 match badge 82% w=
+ith confidence (free) =C2=B7 "Why it fits" in a few words, positives only (=
+top 5 pre-generated, others on first view) =C2=B7 Save icon</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Bottom</p></td>
+<td class=3D"confluenceTd">
+<p>Collapsed "Near misses (4)" section (Could)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>
+<p><strong>Primary action:</strong> open a card into job focus. <strong>Sec=
+ondary:</strong> Save from the card.</p></li>
+<li>
+<p><strong>States:</strong> loading skeleton, empty digest, profile below t=
+he gate (scores hidden, banner to complete the profile).</p></li>
+</ul>
+<h3 id=3D"CareerPilot=E2=80=93WireframePlan-5.Jobfocus">5. Job focus</h3>
+<p><strong>Purpose:</strong> decide in seconds: apply directly, prepare fir=
+st, or save for later. <strong>Stories:</strong> US2, US6, US10, US17, US21=
+.</p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Region</p></th>
+<th class=3D"confluenceTh">
+<p>Elements</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Header</p></td>
+<td class=3D"confluenceTd">
+<p>Title =C2=B7 company =C2=B7 location =C2=B7 posted date =C2=B7 source =
+=C2=B7 language requirement chip</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Score block (free)</p></td>
+<td class=3D"confluenceTd">
+<p>Match 82% =C2=B7 confidence label =C2=B7 "How this score is calculated" =
+(side drawer: each criterion, weight and contribution)</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Why it fits (free)</p></td>
+<td class=3D"confluenceTd">
+<p>A few words on the strongest reasons the job fits, positives only; "See =
+gaps, risks and the full match in Prepare"</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Job ad</p></td>
+<td class=3D"confluenceTd">
+<p>Original ad text in its own language</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Sticky action bar</p></td>
+<td class=3D"confluenceTd">
+<p>Primary "Prepare application" with =E2=88=921 badge (accent) =C2=B7 seco=
+ndary "Apply on job site" =C2=B7 tertiary "Save"</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>
+<p><strong>Prepare application (=E2=88=921):</strong> deducts 1 credit and =
+opens the preparation page. Reopening a job already prepared is free.</p></=
+li>
+<li>
+<p><strong>Apply on job site (free):</strong> opens the original job postin=
+g in a new tab. On return: "Did you apply?" Yes logs the application and sa=
+ves the job description to the application history.</p></li>
+<li>
+<p><strong>Save (free):</strong> toggles to "Saved"; the job appears under =
+Saved.</p></li>
+<li>
+<p><strong>Why Prepare is the primary button:</strong> it is where CareerPi=
+lot adds value over the job board; Apply stays one click away.</p></li>
+<li>
+<p><strong>States:</strong> no credits left (Prepare disabled, "Resets at 0=
+0:00 =C2=B7 Buy 10 credits"; Apply and Save still work), job expired at the=
+ source (Apply disabled, "This job is no longer available").</p></li>
+</ul>
+<p><strong>Mobile frame:</strong> the job focus also gets one 390 =C3=97 84=
+4 frame: score, why it fits and the job ad stacked, with Prepare, Apply and=
+ Save in a bar fixed at the bottom.</p>
+<h3 id=3D"CareerPilot=E2=80=93WireframePlan-6.Applicationpreparation">6. Ap=
+plication preparation</h3>
+<p><strong>Purpose:</strong> understand the fit in depth, agree a strategy,=
+ then generate the documents. <strong>Stories:</strong> US3, US5, US6, US10=
+.</p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Region</p></th>
+<th class=3D"confluenceTh">
+<p>Elements</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Header</p></td>
+<td class=3D"confluenceTd">
+<p>Back to job =C2=B7 job title and company =C2=B7 credits pill =C2=B7 "App=
+ly on job site"</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Detailed match</p></td>
+<td class=3D"confluenceTd">
+<p>Four groups: strengths, gaps, transferables, risks; each point links to =
+the CV and ad passage; language requirement vs. profile level</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Strategy</p></td>
+<td class=3D"confluenceTd">
+<p>AI proposal: three points to emphasise =C2=B7 how to address each gap =
+=C2=B7 tone (formal or neutral) =C2=B7 document language (defaults to the a=
+d's) =C2=B7 every item editable =C2=B7 "Confirm strategy"</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Documents</p></td>
+<td class=3D"confluenceTd">
+<p>"Generate CV" =E2=88=921 =C2=B7 "Generate cover letter" =E2=88=921, enab=
+led once the strategy is confirmed =C2=B7 after generation: preview with ch=
+anges highlighted, accept, reject or edit each change, export PDF or DOCX</=
+p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>
+<p><strong>Steps:</strong> detailed match is shown on arrival (credit alrea=
+dy used) =E2=86=92 user confirms or edits the strategy =E2=86=92 generates =
+CV and/or cover letter =E2=86=92 Apply on job site. Interview prep comes la=
+ter, from the application history.</p></li>
+<li>
+<p><strong>States:</strong> generating (progress per document), statement n=
+ot supported by the profile (flagged, export blocked until resolved), out o=
+f credits mid-way (paid buttons disabled, strategy still editable, "Buy 10 =
+credits" offered), regenerate (confirm dialog: "This uses 1 more credit").<=
+/p></li>
+</ul>
+<h3 id=3D"CareerPilot=E2=80=93WireframePlan-7.Applicationhistory">7. Applic=
+ation history</h3>
+<p><strong>Purpose:</strong> one place for every application, and the entry=
+ point to interview prep. <strong>Stories:</strong> US4, US11, US18.</p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<tbody>
+<tr>
+<th class=3D"confluenceTh">
+<p>Region</p></th>
+<th class=3D"confluenceTh">
+<p>Elements</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>List</p></td>
+<td class=3D"confluenceTd">
+<p>One row per application: title, company, applied date, source, status ch=
+ip (Applied, Interview, Offer, Rejected), document version =C2=B7 filter by=
+ status</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Detail</p></td>
+<td class=3D"confluenceTd">
+<p>The job description saved when the user confirmed the application, reada=
+ble even after the posting expires =C2=B7 documents used =C2=B7 status chan=
+ge in two clicks</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<p>Interview</p></td>
+<td class=3D"confluenceTd">
+<p>"Prepare for interview" =E2=88=921: questions based on the saved job des=
+cription and the gaps</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>
+<p><strong>Primary action:</strong> open an application, read the saved job=
+ description, then Prepare for interview.</p></li>
+<li>
+<p><strong>Why interview prep lives here:</strong> it only matters once the=
+ user has applied; offering it when a job is first opened would spend a cre=
+dit too early.</p></li>
+<li>
+<p><strong>States:</strong> empty ("Applications you confirm appear here"),=
+ posting expired at the source (saved description still shown), reminder af=
+ter 10 days without a status change (US11), no credits left (Prepare for in=
+terview disabled, "Resets at 00:00 =C2=B7 Buy 10 credits").</p></li>
+</ul>
+<h2 id=3D"CareerPilot=E2=80=93WireframePlan-Wireframeconventions">Wireframe=
+ conventions</h2>
+<ul>
+<li>
+<p><strong>Fidelity:</strong> greyscale boxes and real copy, no lorem ipsum=
+; the orange accent marks only the primary action.</p></li>
+<li>
+<p><strong>Language:</strong> UI text in English for the prototype; German =
+version after the visual design.</p></li>
+<li>
+<p><strong>Grid:</strong> 8-point spacing, 12-column desktop grid, type sca=
+le 32 / 24 / 18 / 16 / 14.</p></li>
+<li>
+<p><strong>Reusable components:</strong> SSO card (Figma Community), header=
+, footer, primary and secondary button, credit badge, filter chip, job card=
+, match badge, evidence group, stepper, confirm dialog.</p></li>
+<li>
+<p><strong>Annotations:</strong> each frame names the user stories it cover=
+s, so the demo maps to Jira.</p></li>
+<li>
+<p><strong>Prototype links:</strong> SSO =E2=86=92 onboarding =E2=86=92 ale=
+rts =E2=86=92 job list =E2=86=92 job focus =E2=86=92 preparation page =E2=
+=86=92 generate CV, plus Apply =E2=86=92 application history =E2=86=92 Prep=
+are for interview, and Save, to click through live in the 7-minute demo.</p=
+></li>
+</ul>
+<p><strong>Not in this wireframe:</strong> the interview prep content itsel=
+f (only its entry button), employer login with its own onboarding, recruite=
+r warnings, the payment step behind buying extra credits. They stay in the =
+backlog or later phases.</p>
+<h2 id=3D"CareerPilot=E2=80=93WireframePlan-QuestionsresolvedbeforeFigma">Q=
+uestions resolved before Figma</h2>
+<ul>
+<li>
+<p><strong>Sign-in:</strong> standard SSO, reusing a Figma Community compon=
+ent (Google, Microsoft, Apple, GitHub, LinkedIn).</p></li>
+<li>
+<p><strong>Job lists:</strong> Bundesagentur f=C3=BCr Arbeit lists are enou=
+gh for the MVP.</p></li>
+<li>
+<p><strong>Frames:</strong> desktop plus one mobile frame (the job focus).<=
+/p></li>
+<li>
+<p><strong>Bought credits:</strong> never expire.</p></li>
+</ul>
+    </div>
+</body>
+</html>
+------=_Part_16_1293947763.1791536311158
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/466bf78dfc963295a8b14cec4584e33d2999b40a9198e63e4cd1f5392b81be59
+
+/9j/4AAQSkZJRgABAgAAAQABAAD/wAARCAD6ATcDAREAAhEBAxEB/9sAQwAIBgYHBgUIBwcHCQkI
+CgwUDQwLCwwZEhMPFB0aHx4dGhwcICQuJyAiLCMcHCg3KSwwMTQ0NB8nOT04MjwuMzQy/9sAQwEJ
+CQkMCwwYDQ0YMiEcITIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIy
+MjIyMjIy/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+gDF
+uPFWl2msXGm3EvkyW8PnSySMqqq4z0J3HjuARnjOeKAHS+KtDgLCbUYoiib2DgrgYzzkdcc46456
+UAI3ivQ1eRG1GIPGFLJg7hnAAxjOfmXI6jIzQBcudXsLJ7dLm4WI3HEW8EBj6ZxwfY0AZ03jPQYr
+QXK36SozbVEYJLHCHj2xJGc9PmHqKALt1r2lWN39lur6GK4OAI2OCc9MCgCjYeNNBv7IXSXyxrgk
+pKNrLgE9PoCeOuD6UAWLrxJp9nrMelztILiRo0Tau4EusjDOMkcRNyR/XABSvvG+kadfXtpcC5DW
+YzK4jyv3Q2Bzk8MOg70Aa1trFheJcvb3AkW2/wBcQrfL1yOnUYOR1FAFQ+K9CVVY6lEAVZuQcgKd
+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
+/9k=
+------=_Part_16_1293947763.1791536311158--

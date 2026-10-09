@@ -1,0 +1,534 @@
+Date: Fri, 9 Oct 2026 08:58:51 +0000 (UTC)
+Message-ID: <1409405990.15.1791536331489@33d342fb848f>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_14_1276533193.1791536331489"
+
+------=_Part_14_1276533193.1791536331489
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Calculating profile completeness</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Calculating profile completeness</h1>
+    <div class=3D"Section1">
+        <p local-id=3D"76fe7e7a6e95">Assuming you mean <strong>competitors<=
+/strong>, I checked <strong>Europass, Indeed, </strong><a class=3D"external=
+-link" data-card-appearance=3D"inline" href=3D"http://Resume.io" local-id=
+=3D"1bdf4907a49f" rel=3D"nofollow">http://Resume.io</a> <strong> and Kickre=
+sume</strong>. Below is a consolidated field inventory; availability varies=
+ by platform. Detailed subfields are a synthesis of their documentation, no=
+t an exhaustive audit of every live form.</p>
+<p local-id=3D"8a0b215c41b8"><strong>CV content fields</strong></p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"1112" data-layout=3D"center" data-local-id=3D"88=
+a713f5-1326-4a1c-84c7-37f1f331a3c2" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 369.0px;">
+<col style=3D"width: 742.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"6eedeb1c-f2bc-471d-9878-cbb72c694eb5">
+<th data-local-id=3D"d92e3941-70d8-41d1-bb4a-ea9d5bd0ae34" class=3D"conflue=
+nceTh">
+<p local-id=3D"222991198483">Section</p></th>
+<th data-local-id=3D"ea380367-f3dd-4c56-b3b3-12a073b116ea" class=3D"conflue=
+nceTh">
+<p local-id=3D"1688d19ec00e">Fields</p></th>
+</tr>
+<tr data-local-id=3D"7c63aa4c-61e4-42b2-8d7d-f167dd070e31">
+<td data-local-id=3D"4107e3cc-0c9a-4009-a85c-96190b0dad54" class=3D"conflue=
+nceTd">
+<p local-id=3D"ad5165de2115"><strong>Personal and contact details</strong><=
+/p></td>
+<td data-local-id=3D"a45912ef-65fa-448d-b52f-a0af6f254060" class=3D"conflue=
+nceTd">
+<p local-id=3D"ba7267528afc">First name, last name, professional/job title,=
+ email, phone number, location/address, optional profile photo</p></td>
+</tr>
+<tr data-local-id=3D"210845b2-d7a6-49a1-933c-c7d46364610f">
+<td data-local-id=3D"b9d40c72-b3d0-4078-94e1-81468df49ed5" class=3D"conflue=
+nceTd">
+<p local-id=3D"341542840c09"><strong>Professional introduction</strong></p>=
+</td>
+<td data-local-id=3D"874af970-566f-4c98-bfd8-b1c470ed2ff4" class=3D"conflue=
+nceTd">
+<p local-id=3D"e50a8f9bb998">Professional summary, career objective</p></td=
+>
+</tr>
+<tr data-local-id=3D"45cba7db-ce65-4bd8-90f0-c2004e264870">
+<td data-local-id=3D"a57622d9-3250-4e12-acc3-5ba8d7db7002" class=3D"conflue=
+nceTd">
+<p local-id=3D"47d9e88a67c5"><strong>Professional links</strong></p></td>
+<td data-local-id=3D"a32298bc-30e1-4e8c-a379-3566f75c71e4" class=3D"conflue=
+nceTd">
+<p local-id=3D"f3fb6edd1712">Personal website, portfolio, professional/soci=
+al profile links</p></td>
+</tr>
+<tr data-local-id=3D"db331379-9890-432b-a1d3-45bfc8f2ee0e">
+<td data-local-id=3D"17d805e2-d2d3-4615-966e-5b118ce6542e" class=3D"conflue=
+nceTd">
+<p local-id=3D"2580fea6f49f"><strong>Work experience</strong> =E2=80=94 rep=
+eatable</p></td>
+<td data-local-id=3D"a2de0482-0f2e-4ec1-8f62-4e95b25bbf64" class=3D"conflue=
+nceTd">
+<p local-id=3D"afc74f085003">Job title, employer, location, start date, end=
+ date/current position, responsibilities, achievements</p></td>
+</tr>
+<tr data-local-id=3D"61c28574-c97f-47f6-aebf-21e02e1d24ac">
+<td data-local-id=3D"9c4f9f0b-c784-481e-a8fc-0fb37bce5fc4" class=3D"conflue=
+nceTd">
+<p local-id=3D"bdea84d6098d"><strong>Education</strong> =E2=80=94 repeatabl=
+e</p></td>
+<td data-local-id=3D"c90ae4ad-d70a-486f-8a4e-b32d4c690de9" class=3D"conflue=
+nceTd">
+<p local-id=3D"e22a0c366aed">Institution, qualification/degree, field of st=
+udy, dates/graduation year, relevant coursework, grades, thesis, academic a=
+chievements</p></td>
+</tr>
+<tr data-local-id=3D"59a337be-c897-41f8-be28-581ad580456a">
+<td data-local-id=3D"6e910e7d-f9bc-40a2-9974-80506a0a1923" class=3D"conflue=
+nceTd">
+<p local-id=3D"a57d450fed72"><strong>Skills</strong></p></td>
+<td data-local-id=3D"9345edf2-5f12-419f-bece-8f331a398501" class=3D"conflue=
+nceTd">
+<p local-id=3D"23465623794f">Technical skills, digital tools, transferable/=
+soft skills, optional proficiency level</p></td>
+</tr>
+<tr data-local-id=3D"2f9d9b57-666a-4a5e-ba6b-54fe60d9f300">
+<td data-local-id=3D"267b7a85-9bb5-4797-b457-0ede95e33873" class=3D"conflue=
+nceTd">
+<p local-id=3D"4125e31851e3"><strong>Languages</strong></p></td>
+<td data-local-id=3D"14f8cea1-a93a-49d7-9a87-03deca39b065" class=3D"conflue=
+nceTd">
+<p local-id=3D"fb67a296ba40">Language, proficiency level</p></td>
+</tr>
+<tr data-local-id=3D"fa84e521-04ce-43c4-b877-3d7924bee884">
+<td data-local-id=3D"e0289926-fb3e-4685-bfa6-96e0edf33a42" class=3D"conflue=
+nceTd">
+<p local-id=3D"7fce93d6bd05"><strong>Certifications and licences</strong></=
+p></td>
+<td data-local-id=3D"0c237ae8-7f75-4b61-875d-7176b30ad7b7" class=3D"conflue=
+nceTd">
+<p local-id=3D"1557d4f54c30">Credential name, issuing organisation, date ea=
+rned, expiry date where applicable; driving licence</p></td>
+</tr>
+<tr data-local-id=3D"9feb29de-9eb8-47fc-ab7c-c3874e6307bd">
+<td data-local-id=3D"67edb756-e35f-4a80-817b-c079914f181d" class=3D"conflue=
+nceTd">
+<p local-id=3D"1729991e7ef8"><strong>Projects</strong></p></td>
+<td data-local-id=3D"d9f858f0-852e-4159-bd1a-9fce2e05a5c3" class=3D"conflue=
+nceTd">
+<p local-id=3D"14898313e3bf">Project title, description, contribution, achi=
+evements, relevant links</p></td>
+</tr>
+<tr data-local-id=3D"6175cee5-f461-44d1-b69b-489e69e9fca2">
+<td data-local-id=3D"cdfbc4c4-6615-4c92-822d-2e9ad97da1aa" class=3D"conflue=
+nceTd">
+<p local-id=3D"0769441d9d61"><strong>Courses and training</strong></p></td>
+<td data-local-id=3D"c3f1ffcf-86d2-4f5f-b2cb-50cb18f33a51" class=3D"conflue=
+nceTd">
+<p local-id=3D"3a8b96f454d9">Course/training title, provider, dates, descri=
+ption</p></td>
+</tr>
+<tr data-local-id=3D"36882d6b-ce4e-46bc-9451-7b3d037937ec">
+<td data-local-id=3D"a7074102-f7dc-43e2-9d9c-03babc2c9be0" class=3D"conflue=
+nceTd">
+<p local-id=3D"16cce18fd62d"><strong>Volunteering</strong></p></td>
+<td data-local-id=3D"5ccd7bf9-bf25-4883-a95b-82a1f4bb1266" class=3D"conflue=
+nceTd">
+<p local-id=3D"c13a3e47d215">Organisation, role, dates, activities and achi=
+evements</p></td>
+</tr>
+<tr data-local-id=3D"90a8ac9f-bc53-4aeb-b3d0-7765cdd9c317">
+<td data-local-id=3D"662f95c5-18bc-4ae0-825b-521fb52dd6a6" class=3D"conflue=
+nceTd">
+<p local-id=3D"6488a3b49d0f"><strong>Awards and honours</strong></p></td>
+<td data-local-id=3D"dad3641a-0d9b-4350-bfec-27a7edf8eb2a" class=3D"conflue=
+nceTd">
+<p local-id=3D"3d215e8d8c80">Award name, awarding organisation, date, descr=
+iption</p></td>
+</tr>
+<tr data-local-id=3D"5d6d672d-c7cd-4922-a6c5-e878795ccd75">
+<td data-local-id=3D"29927abb-b667-4343-a5d3-0a5810851f58" class=3D"conflue=
+nceTd">
+<p local-id=3D"10181ab6ba01"><strong>Publications</strong></p></td>
+<td data-local-id=3D"09467b94-5041-4997-975f-00b856129f47" class=3D"conflue=
+nceTd">
+<p local-id=3D"627a4b44d00f">Publication title, authors, publication/outlet=
+, date, citation or link</p></td>
+</tr>
+<tr data-local-id=3D"c96da7d7-9c5c-4b8a-af04-5b61ecbf8907">
+<td data-local-id=3D"24c05e31-d185-4ab4-af8d-1eb4ca0ef265" class=3D"conflue=
+nceTd">
+<p local-id=3D"7b75527793ec"><strong>References</strong></p></td>
+<td data-local-id=3D"0c91d95a-fb2b-4934-b59c-7e983b8db1ad" class=3D"conflue=
+nceTd">
+<p local-id=3D"f32039ffe5ed">Referee name, professional relationship, role/=
+organisation, contact details</p></td>
+</tr>
+<tr data-local-id=3D"c52398e0-cb01-46e2-8cbd-12cf84455371">
+<td data-local-id=3D"5f8c53e7-b2a0-4e8b-b15b-98c1873c5b3c" class=3D"conflue=
+nceTd">
+<p local-id=3D"0fdb3a6876b2"><strong>Interests and hobbies</strong></p></td=
+>
+<td data-local-id=3D"0805003d-e28e-437b-bdeb-23279fcd2b46" class=3D"conflue=
+nceTd">
+<p local-id=3D"1672f585b811">Interest name, optional description</p></td>
+</tr>
+<tr data-local-id=3D"01ab6295-9e61-4242-8173-710482632381">
+<td data-local-id=3D"caef9903-3ae7-492d-a75e-03794e69ac62" class=3D"conflue=
+nceTd">
+<p local-id=3D"911f5d3cbeb2"><strong>Custom sections</strong></p></td>
+<td data-local-id=3D"ed2be95e-4261-4ca6-892f-18b896f0193c" class=3D"conflue=
+nceTd">
+<p local-id=3D"10eaba790615">User-defined section title and content</p></td=
+>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"d7fbe7ff8e81"><a class=3D"external-link" data-card-appearanc=
+e=3D"inline" href=3D"http://Resume.io" local-id=3D"6278eb0e35f4" rel=3D"nof=
+ollow">http://Resume.io</a> documents personal details, summary, links, emp=
+loyment, education, skills and extra sections. Europass supports experience=
+, education/training, languages, digital skills, projects and achievements.=
+ Kickresume also supports optional awards, publications, references, social=
+ links and custom sections. <a class=3D"external-link" href=3D"https://help=
+.resume.io/en/articles/3785152" rel=3D"nofollow">Resume.io</a>, <a class=3D=
+"external-link" href=3D"https://europass.europa.eu/en/how-complete-my-europ=
+ass-profile" rel=3D"nofollow">Europass</a>, <a class=3D"external-link" href=
+=3D"https://www.kickresume.com/en/resumes/" rel=3D"nofollow">Kickresume</a>=
+</p>
+<p local-id=3D"d3e06cf57339"><strong>Job-platform profile fields =E2=80=94 =
+separate from the exported CV</strong></p>
+<p local-id=3D"bfba402dcd72">Indeed additionally documents these fields for=
+ matching and employer discovery:</p>
+<div class=3D"table-wrap">
+<table data-table-width=3D"946" data-layout=3D"center" data-local-id=3D"06c=
+587b7-c9cf-44a5-b9a1-1342829802fa" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 332.0px;">
+<col style=3D"width: 613.0px;">
+</colgroup>
+<tbody>
+<tr data-local-id=3D"4ad6b368-4dd4-491a-b968-011af2fe010e">
+<th data-local-id=3D"8a81a5aa-0ea1-48be-992a-e08a44d48bda" class=3D"conflue=
+nceTh">
+<p local-id=3D"9daebbb0508a">Category</p></th>
+<th data-local-id=3D"f8fb9ff9-bbe0-40c6-9a2a-97cd54a9dd4e" class=3D"conflue=
+nceTh">
+<p local-id=3D"af2bfbf62744">Fields</p></th>
+</tr>
+<tr data-local-id=3D"14124491-9d72-41e9-91ef-109b9434091a">
+<td data-local-id=3D"6089106d-35ef-41d5-904d-9c78ce49c6aa" class=3D"conflue=
+nceTd">
+<p local-id=3D"13873a65b06c"><strong>Target roles</strong></p></td>
+<td data-local-id=3D"2fa48009-939e-4bba-b7a7-813032082dd7" class=3D"conflue=
+nceTd">
+<p local-id=3D"de0aff895c60">Desired job titles, related roles or industrie=
+s</p></td>
+</tr>
+<tr data-local-id=3D"d7b01864-9f51-401a-a859-688475573566">
+<td data-local-id=3D"e6768f79-c886-4348-a557-d4201df7082b" class=3D"conflue=
+nceTd">
+<p local-id=3D"8580b5c54cf8"><strong>Employment preferences</strong></p></t=
+d>
+<td data-local-id=3D"9bc0dd0b-db4c-4e9c-9272-66d21cbe1daa" class=3D"conflue=
+nceTd">
+<p local-id=3D"05c16b60a3fe">Full-time, part-time, freelance, internship</p=
+></td>
+</tr>
+<tr data-local-id=3D"56e7e888-19ba-4fde-b948-07fe12969869">
+<td data-local-id=3D"2fa56d8c-9744-4567-a54f-e72c4406f7fc" class=3D"conflue=
+nceTd">
+<p local-id=3D"72b3ed0444ca"><strong>Working schedule</strong></p></td>
+<td data-local-id=3D"9963df87-7dfb-47b0-9358-7ee70d829fb2" class=3D"conflue=
+nceTd">
+<p local-id=3D"93f8c8fe207f">Preferred days, hours and shifts</p></td>
+</tr>
+<tr data-local-id=3D"fa1d31d3-4b68-45dd-85d0-963c81f851b2">
+<td data-local-id=3D"39a10ba7-e417-4bcc-8969-233ac47008e1" class=3D"conflue=
+nceTd">
+<p local-id=3D"5449bf7df5e3"><strong>Salary expectations</strong></p></td>
+<td data-local-id=3D"878632d4-cf74-485d-9e35-8fbd5b74f215" class=3D"conflue=
+nceTd">
+<p local-id=3D"dacc35feafa6">Desired pay range</p></td>
+</tr>
+<tr data-local-id=3D"00cc08c2-85dc-4817-af54-e75378b9c9eb">
+<td data-local-id=3D"07883bb1-8b6f-4520-9eec-00d0387baa1e" class=3D"conflue=
+nceTd">
+<p local-id=3D"a30af1f518be"><strong>Location preferences</strong></p></td>
+<td data-local-id=3D"3f584c37-2bc6-4161-99df-a60344bafcc3" class=3D"conflue=
+nceTd">
+<p local-id=3D"09d0717bf697">Remote/hybrid/on-site, preferred commute time,=
+ willingness to relocate</p></td>
+</tr>
+<tr data-local-id=3D"43c134d1-4ebb-4f59-91b7-d4bf75404c00">
+<td data-local-id=3D"5f495c71-3182-4a88-9eda-ae9dd30f3d6d" class=3D"conflue=
+nceTd">
+<p local-id=3D"df06839c68ee"><strong>Availability</strong></p></td>
+<td data-local-id=3D"6612f8ab-c748-4fdb-9a37-c96e6ab29f50" class=3D"conflue=
+nceTd">
+<p local-id=3D"949c124d1717">Available immediately</p></td>
+</tr>
+<tr data-local-id=3D"4f4c5385-fb55-462f-befe-ccabb4d8aba8">
+<td data-local-id=3D"8260eab8-b381-4391-9cf5-e1d50a945341" class=3D"conflue=
+nceTd">
+<p local-id=3D"38b668c8e39b"><strong>Search exclusions</strong></p></td>
+<td data-local-id=3D"e7987a4d-3077-4a5b-9c70-57a8ebd825b7" class=3D"conflue=
+nceTd">
+<p local-id=3D"970863759728">Job characteristics the candidate wants to hid=
+e</p></td>
+</tr>
+<tr data-local-id=3D"cc829970-3bd7-4f59-9223-31910814dea1">
+<td data-local-id=3D"1b2edc3e-510f-4ac5-a4b4-0cf259bc2d6d" class=3D"conflue=
+nceTd">
+<p local-id=3D"3cf85899ac15"><strong>Visibility</strong></p></td>
+<td data-local-id=3D"c86413f4-7f1e-420c-8c7e-c8b50a3471c7" class=3D"conflue=
+nceTd">
+<p local-id=3D"a69c7051c76a">Whether employers can discover the profile</p>=
+</td>
+</tr>
+<tr data-local-id=3D"35af823c-061e-4682-9924-b20a9e265f5e">
+<td data-local-id=3D"a9923a07-9cb4-46df-80b2-e6634e9258da" class=3D"conflue=
+nceTd">
+<p local-id=3D"437a810376de"><strong>Resume attachment</strong></p></td>
+<td data-local-id=3D"1ecc5d02-34da-47ca-bbce-30d02202e5c2" class=3D"conflue=
+nceTd">
+<p local-id=3D"d88883f916a2">Uploaded CV or platform-built resume</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p local-id=3D"35e10196a5f0">These are profile/preferences fields rather th=
+an mandatory CV sections. <a class=3D"external-link" href=3D"https://www.in=
+deed.com/career-advice/finding-a-job/how-to-optimize-indeed-profile" rel=3D=
+"nofollow">Indeed profile documentation</a></p>
+<p local-id=3D"474d94b17560">For <strong>CareerPilot=E2=80=99s demo</strong=
+>, I would start with <strong>contact details, experience, education, skill=
+s, languages, target roles, location preferences and availability</strong>.=
+ Keep the other sections optional, and let projects or volunteering provide=
+ evidence for students without formal work experience.</p>
+    </div>
+</body>
+</html>
+------=_Part_14_1276533193.1791536331489--
