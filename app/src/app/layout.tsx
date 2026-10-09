@@ -3,6 +3,7 @@ import "@fontsource-variable/inter";
 import "./globals.css";
 import { StoreProvider } from "@/components/store";
 import { Shell } from "@/components/Shell";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "CareerPilot · demo",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <StoreProvider>
           <Shell>{children}</Shell>
         </StoreProvider>
+        <Analytics />
       </body>
     </html>
   );
